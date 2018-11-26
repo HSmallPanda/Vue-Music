@@ -14,9 +14,6 @@ export default {
       keyArr:[]
     }
   },
-  components:{
-    
-  },
   props:{
     nowTime:{
       type:Number,
@@ -52,7 +49,7 @@ export default {
       })
   },
   computed:{
-    //获取所有的key
+    //获取所有的key 便于判断当前时间
     getAllKey(){
       for(var allkey in this.lrcData){
         this.keyArr.push(allkey);
