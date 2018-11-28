@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '@/pages/index'
 import MusicRank from '@/pages/musicRank'
+import Home from '@/pages/home'
 import Singer from '@/pages/singer'
 import HotMusic from '@/pages/musicType/HotMusic'
 import NewMusic from '@/pages/musicType/NewMusic'
@@ -10,26 +11,36 @@ import SingerInfo from '@/pages/singer/singerinfo'
 import MusicPaly from '@/pages/MusicPlay'
 import Search from '@/pages/search'
 import SearchView from '@/pages/search/SearchView'
+import MoreList from '@/pages/MoreList'
 Vue.use(Router)
 
 export default new Router({
   routes: [
   	{
 		path:"/",
-		redirect:"/singer",
+		redirect:"/home",
 		component: Index,
 		children:[
+		    {
+				path:"home",
+				component: Home,
+			},
 			{
-				path:"/singer",
+				path:"singer",
 				component: Singer,
 			},
 			{
-				path:"/singerinfo/:singerid",
+				path:"singerinfo/:singerid",
 				name:"singerinfo",
 				component: SingerInfo,
 			},
 			{
-				path:"/search",
+				path:"more",
+				name:"more",
+				component: MoreList,
+			},
+			{
+				path:"search",
 				name:"search",
 				component: Search,
 				children:[
