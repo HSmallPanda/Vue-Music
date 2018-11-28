@@ -109,6 +109,16 @@ textarea{
         width: 130px;
         margin: 0 10px;
     }
+    .TodyR .list li,.NewR .list li{
+        margin: 20px !important;
+    }
+    .TodyR .list img,.NewR .list img{
+        width: 160px !important;
+        height: 160px;
+    }
+    .TodyR .title,.NewR .title{
+        width: 160px !important;
+    }
 }
 
 @media screen and (max-width: 320px){
@@ -123,6 +133,22 @@ textarea{
         width: 90px;
         height: 90px;
     }
+    .TodyR .list li,.NewR .list li{
+        margin: 5px !important;
+    }
+    .TodyR .list img,.NewR .list img{
+        width: 90px !important;
+        height: 90px;
+    }
+    .TodyR .title,.NewR .title{
+        width: 90px !important;
+    }
+    .more img{
+        width: 120px !important;
+    }
+    .more .title{
+        width: 120px !important;
+    }
 }
 
 @media screen and (max-width: 375px) and (min-width: 321px){
@@ -136,5 +162,18 @@ textarea{
     .singer div img{
         width: 90px;
         height: 90px;
+    }
+    .TodyR .list li,.NewR .list li{
+        margin: 5px !important;
+    }
+    .TodyR .list img,.NewR .list img{
+        width: 90px !important;
+        height: 90px;
+    }
+    .more img{
+        width: 135px !important;
+    }
+    .more .title{
+        width: 135px !important;
     }
 }
